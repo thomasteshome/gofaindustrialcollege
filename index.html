@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gofa Industrial College - Links</title>
+    <style>
+        :root {
+            --bg: #f3f4f6;
+            --card-bg: #ffffff;
+            --text: #1f2937;
+            --primary: #2563eb;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .link-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card {
+            background: var(--card-bg);
+            padding: 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Specific Brand Colors for clarity */
+        .fb { border-left: 5px solid #1877F2; }
+        .x { border-left: 5px solid #000000; }
+        .tg { border-left: 5px solid #24A1DE; }
+        .yt { border-left: 5px solid #FF0000; }
+        .tk { border-left: 5px solid #EE1D52; }
+        .web { border-left: 5px solid #2563eb; }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Gofa Industrial College</h1>
+            <p>Official Digital Portals</p>
+        </div>
+        
+        <div class="link-stack">
+            <a href="https://www.gofaindustrialcollege.edu.et" class="link-card web">Official Website</a>
+            <a href="https://www.gic.aatvetb.edu.et" class="link-card web">Student Portal (AATVETB)</a>
+            <a href="https://t.me/Gofaindustrialcollege" class="link-card tg">Telegram Channel</a>
+            <a href="https://www.facebook.com/gofaindustrialcolleg" class="link-card fb">Facebook Page</a>
+            <a href="https://www.youtube.com/@GofaIndustrialCollege" class="link-card yt">YouTube Channel</a>
+            <a href="https://www.tiktok.com/@gofaindustrialcollege" class="link-card tk">TikTok</a>
+            <a href="https://twitter.com/GofaIndustrialc" class="link-card x">X (Twitter)</a>
+        </div>
+
+        <footer>&copy; 2026 Gofa Industrial College</footer>
+    </div>
+
+</body>
+</html>
