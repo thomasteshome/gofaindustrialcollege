@@ -109,10 +109,54 @@
 
         .logo-wrapper {
             position: relative;
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 1rem;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 1.5rem;
         }
+
+        /* Circular logo styles */
+        .logo-circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border: 4px solid white;
+        }
+
+        /* Inner circle with college initials */
+        .logo-inner {
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Alternative: If you have an actual image logo, use this instead (commented) */
+        /*
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        */
 
         .logo-glow {
             position: absolute;
@@ -123,23 +167,13 @@
             filter: blur(20px);
             opacity: 0.6;
             animation: glow 3s infinite alternate;
+            top: 0;
+            left: 0;
         }
 
         @keyframes glow {
             from { filter: blur(20px) scale(1); opacity: 0.6; }
             to { filter: blur(25px) scale(1.2); opacity: 0.8; }
-        }
-
-        .logo {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            position: relative;
-            z-index: 2;
-            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-            background: white;
-            border-radius: 50%;
-            padding: 10px;
         }
 
         h1 {
@@ -336,6 +370,15 @@
 
             .subtitle::before { left: -25px; }
             .subtitle::after { right: -25px; }
+
+            .logo-wrapper {
+                width: 110px;
+                height: 110px;
+            }
+
+            .logo-inner {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
@@ -350,8 +393,15 @@
             <div class="profile-section">
                 <div class="logo-wrapper">
                     <div class="logo-glow"></div>
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='%232563eb'/%3E%3Ctext x='100' y='130' font-size='70' text-anchor='middle' fill='white' font-family='Arial'%3EGIC%3C/text%3E%3C/svg%3E" 
-                         alt="GIC Logo" class="logo">
+                    <!-- Circular logo with initials -->
+                    <div class="logo-circle">
+                        <div class="logo-inner">GIC</div>
+                    </div>
+                    
+                    <!-- If you have an actual image logo, use this instead (uncomment and comment the above) -->
+                    <!--
+                    <img src="logo.png" alt="GIC Logo" class="logo-image">
+                    -->
                 </div>
                 <h1>Gofa Industrial College</h1>
                 <p class="subtitle">Official Digital Portals</p>
